@@ -1,0 +1,15 @@
+include mixins
+
++page_container
+    br
+    br
+    a(name="afisha" data-magellan-destination="afisha")
+    h2 Афиша
+    div.row.afisha
+        div(class="medium-6 columns")
+            +afisha_item(17, "октября")
+                | Вечеринка-открытие! После долгих каникул вечеринки в Стимуле возвращаются в новом формате! За пультом DJ Señor Don Pedro :-)
+        div(class="medium-6 columns")
+            +afisha_item(24, "октября")
+                | Moscow Westie Fest Pre-Party и небольшой Джек-н-Джилл для разогрева!
+

@@ -1,0 +1,21 @@
+mixin afisha_item(day, month)
+    table(width="100%" border="0"): tr
+        td.date
+            span.day= day
+            span.month= month
+        td.descr(width="90%")
+            if block
+                block
+
+                    
+mixin page_container()
+    div.row
+        div(class="small-12 small-centered medium-12 medium-centered large-10 large-centered columns")
+            if block
+                block
+
+mixin page_container_narrow()
+    div.row
+        div(class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns")
+            if block
+                block
