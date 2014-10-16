@@ -23,6 +23,10 @@ body, p {
   line-height: rem-calc(24pt);
 }
 
+a, a:hover, a:active {
+  color: #61c6fa;
+}
+
 p.big {
   font-size: rem-calc(20pt);
   line-height: rem-calc(32pt);
@@ -63,9 +67,9 @@ h1, h2, h3, h4, h5, h6 {
       padding: rem-calc(2px) rem-calc(8px) rem-calc(16px);
 
       a {
-        color: #fff;
-        border-bottom: 1px #fff solid;
-        font-size:rem-calc(18pt);
+        color: #eee;
+        border-bottom: 2px #eee solid;
+        font-size:rem-calc(17pt);
         font-style: italic;
         font-weight: normal;
       }
