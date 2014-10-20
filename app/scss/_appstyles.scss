@@ -1,16 +1,8 @@
-//@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Serif:400italic&subset=latin,cyrillic);
-//@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
-//@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic&subset=latin,cyrillic,latin-ext,cyrillic-ext);
-//@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,cyrillic);
-
 $blue: #143658;
 $blue-dark: #0c2742;
 $red: #d31030;
 
 .row {min-width:100% !important;}
-
-
-
 
 body {
   background: #000;
@@ -22,6 +14,8 @@ body, p {
   font-size: rem-calc(16pt);
   line-height: rem-calc(24pt);
 }
+
+// ================================== Контент ==================================
 
 a, a:hover, a:active {
   color: #61c6fa;
@@ -38,52 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: normal;
   font-style: italic;
-}
-
-.top-menu-container {
-  background-color: $blue;
-  margin: 0;
-  padding: 0;
-  font-family: 'Georgia', serif;
-
-  h1 {
-    display: none;
-  }
-
-  img.logo {
-    height: rem-calc(100px);
-    width: auto;
-    margin: rem-calc(20px) rem-calc(40px)  0 0;
-  }
-
-  ul {
-    margin-bottom: 0;
-    padding: 0;
-    margin-top: rem-calc(80px);
-
-    li {
-      margin-left: rem-calc(16px);
-      margin-bottom: 0;
-      padding: rem-calc(2px) rem-calc(8px) rem-calc(16px);
-
-      a {
-        color: #eee;
-        border-bottom: 2px #eee solid;
-        font-size:rem-calc(17pt);
-        font-style: italic;
-        font-weight: normal;
-      }
-    }
-
-    li.active {
-      background-color: #fff;
-
-      a {
-        border-bottom-color: transparent;
-        color: $blue;
-      }
-    }
-  }
 }
 
 .row.big-party {
@@ -143,4 +91,83 @@ ul.slideshow {
     font-size: rem-calc(14px);
     line-height: rem-calc(24px);    
   }
+}
+
+
+// ================================== Меню ==================================
+
+@mixin top-menu($logo-width, $logo-height) {
+  .top-bar-container {
+    background-color: $blue !important;
+    padding: 0;
+
+    nav {
+      background-color: $blue;
+      min-height: rem-calc($logo-height+5px);
+
+      ul.title-area {
+        min-height: rem-calc($logo-height+5px);
+        li.name h1 {
+          min-width: rem-calc($logo-width+30px);
+          min-height: rem-calc($logo-height+5px);
+          background: $blue url("../images/logo-white.png") no-repeat rem-calc(5px) center;
+          background-size: rem-calc($logo-width) rem-calc($logo-height);
+
+          strong {
+            display: none;
+          }
+        }
+
+        li.toggle-topbar.menu-icon a span {
+          color: #fff!important;
+        }
+      }
+
+      .top-bar-section {
+        margin-top: rem-calc($logo-height - 40px) !important;
+        ul {
+          li {
+            a {
+              background-color: $blue !important;
+              color: #eee !important;
+              font-size: rem-calc(17pt);
+              font-style: italic;
+              font-weight: normal;
+              font-family: Georgia, serif;
+              text-transform: lowercase;
+            }
+          }
+          li.active {
+            a {
+              background-color: #fff !important;
+              color: $blue !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+$small-logo-width: 120px;
+$medium-logo-width: 160px;
+
+@media #{$small-only} {
+  @include top-menu($small-logo-width, $small-logo-width * .75);
+  .top-bar-container nav .top-bar-section ul li.active {
+    a {
+      background-color: $blue !important;
+      color: #fff  !important;
+    }
+  }
+  .top-bar-container nav .top-bar-section ul li {
+    border-top: #5083b6 1px dotted;
+  }
+  .top-bar-container nav .top-bar-section {
+    margin-top: 0!important;
+  }
+}
+
+@media #{$medium-up} {
+  @include top-menu($medium-logo-width, $medium-logo-width * .75);
 }

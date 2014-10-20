@@ -3,18 +3,18 @@ doctype html
 html(class="no-js", lang="en")
     include header
     body
-        a(name="party" data-magellan-destination="party")
         include topmenu
+        a(name="party" data-magellan-destination="party")
 
         +page_container_narrow
-            div.row.big-party
-                div(class="medium-6 columns")
-                    img(src="images/stimul-flare.jpg")
-                div(class="medium-6 columns")
-                    h2.hide Большая пятничная West Coast Swing вечеринка в Стимуле!
-                    img(src="images/big-party-circle.png"
-                    title="Большая пятничная West Coast Swing вечеринка в Стимуле!"
-                    alt="Большая пятничная West Coast Swing вечеринка в Стимуле!")
+                div.row.big-party
+                    div(class="medium-6 columns")
+                        img(src="images/stimul-flare.jpg")
+                    div(class="medium-6 columns")
+                        h2.hide Большая пятничная West Coast Swing вечеринка в Стимуле!
+                        img(src="images/big-party-circle.png"
+                        title="Большая пятничная West Coast Swing вечеринка в Стимуле!"
+                        alt="Большая пятничная West Coast Swing вечеринка в Стимуле!")
         
         
         +page_container_narrow
@@ -29,7 +29,7 @@ html(class="no-js", lang="en")
                 li: img(src="images/slide1.jpg")
                 li: img(src="images/slide2.jpg")
                 li: img(src="images/slide3.jpg")
-        
+         
         
         include afisha
         
@@ -49,8 +49,6 @@ html(class="no-js", lang="en")
                         li Бесплатный вход и Birthday Jam для каждого именинника, а также помощь в проведении ваших праздников и Дней рождения!
                 div(class="medium-6 columns")
                     img(src="images/stimul-zal.jpg")
-
-
 
             br
             br
@@ -84,7 +82,9 @@ html(class="no-js", lang="en")
                 div(class="medium-6 columns")
                     div(class="flex-video widescreen")
                         iframe(width="853" height="480" src="//www.youtube.com/embed/M4o-KrFpVd0?rel=0" frameborder="0" allowfullscreen)
-            <br><br>
+                        
+            br
+            br
             h4.text-center Научиться танцевать WCS в Москве можно  здесь
             p.text-center
                     a(href="http://espresso.dance" target="_blank"): img(src="images/school-es.png")
@@ -95,9 +95,4 @@ html(class="no-js", lang="en")
             p.text-center
                 small © Stimul Big Party 2014
 
-        
-    
-        | <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26628534 = new Ya.Metrika({id:26628534, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26628534" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->    
-    
-    
         include footer

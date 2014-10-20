@@ -1,13 +1,16 @@
-div(class="top-menu-container show-for-medium-up" data-magellan-expedition="fixed")
-    div.row
-        div(class="small-12 small-centered medium-12 medium-centered large-10 large-centered columns")
-            h1 Stimul Big Party West Coast Swing
-            .clearfix
-                img.logo(src="images/logo-white.png" class="left")
-                ul(class="inline-list left")
-                    li(data-magellan-arrival="party"): a(href="#party") вечеринка
-                    li(data-magellan-arrival="afisha"): a(href="#afisha")  афиша
-                    li(data-magellan-arrival="stimul"): a(href="#stimul") стимул
-                    li(data-magellan-arrival="address"): a(href="#address") адрес
-                    li(data-magellan-arrival="about"): a(href="#about") о нас
-                    li(data-magellan-arrival="wcs"): a(href="#wcs") west coast swing
+div(class="contain-to-grid fixed top-bar-container" data-magellan-expedition)
+    nav(data-topbar class="top-bar" role="navigation")
+        ul(class="title-area")
+            li.name 
+                h1: strong Stimul Big Party West Coast Swing
+            li(class="toggle-topbar menu-icon")
+                a(href="#"): span Меню
+ 
+        section(class="top-bar-section")
+            ul
+                li(data-magellan-arrival="party"): a(href="#party") Вечеринка
+                li(data-magellan-arrival="afisha"): a(href="#afisha")  Афиша
+                li(data-magellan-arrival="stimul"): a(href="#stimul") Стимул
+                li(data-magellan-arrival="address"): a(href="#address") Адрес
+                li(data-magellan-arrival="about"): a(href="#about") О нас
+                li(data-magellan-arrival="wcs"): a(href="#wcs") West Coast Swing
