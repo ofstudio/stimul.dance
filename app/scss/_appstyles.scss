@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .row.big-party {
-  margin: rem-calc(60px) 0 rem-calc(30pt)!important;
+  margin: rem-calc(40px) 0 rem-calc(25pt)!important;
   text-align: center;
 //  background-color: #666;
 }
@@ -91,6 +91,33 @@ ul.slideshow {
     font-size: rem-calc(14px);
     line-height: rem-calc(24px);    
   }
+}
+
+
+// ================================== Видео ==================================
+
+.fp-video {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: rem-calc(10px);
+}
+
+.fp-video-ios {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 45%;
+  height: 0;
+  margin-bottom: rem-calc(10px);
+  overflow: hidden;
+  width: 100%!important;
+}
+
+.fp-video-ios video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
