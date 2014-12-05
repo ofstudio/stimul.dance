@@ -11,10 +11,19 @@ _Stimul Big Party West Coast Swing website_
 
 Run `npm install` to install dependencies. Run `grunt` to start local server.
 
-## Deploying
+## Deployment 
+
+### To static hosting (nginx, Apache, etc) via SFTP / SSH (lftp)
 Install [lftp](http://lftp.yar.ru). Rename `deploy-access-sample.sh` to `deploy-access.sh` and setup variables.
 
-Run `grunt publish` to generate `dist` and deploy to you server.
+Run `grunt publish` to generate `dist` and deploy to the server.
+
+### Custom
+Find task `publish` in `Gruntfile.js` and replace last sub-task `shell:deploy` with your own.
+
+
+## TODO
+- Deployment via `rsync` instead of `lftp`
 
 ## License
 MIT
