@@ -1,5 +1,15 @@
 #!/bin/sh
 
+# Replace %SERVER_HOST_NAME%, %SSH_USERNAME% and %SERVER_TARGET_FOLDER% with your own
+
+HOST='%SERVER_HOST_NAME%'
+USER='%SSH_USERNAME%'
+TARGETFOLDER='%SERVER_TARGET_FOLDER%'
+SOURCEFOLDER='dist'
+
+# Authenification
+# Don't store passwords in plain text!
+
 # Get password from OS X Keychain function
 # Replace %ACCOUNT_NAME% with account name of Keychain item
 # See `man security` for more info
@@ -8,13 +18,8 @@ get_pw () {
   | sed 's/password: "\(.*\)"/\1/'
 }
 
-# Replace %SERVER_HOST_NAME%, %SSH_USERNAME% and %SERVER_TARGET_FOLDER% with your own
+# Leave $PASS blank to use SSH key-authenification in lftp
+PASS='' 
 
-HOST='%SERVER_HOST_NAME%'
-USER='%SSH_USERNAME%'
-
-# Don't store server credentials in plain text!
-PASS=$(get_pw)
-
-TARGETFOLDER='%SERVER_TARGET_FOLDER%'
-SOURCEFOLDER='dist'
+# ...or uncomment this to get ssh password from OS X Keychain
+# PASS=$(get_pw)
