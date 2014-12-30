@@ -45,5 +45,9 @@ Run `grunt publish` to generate `dist` and deploy to the server.
 ### Custom
 Find task `publish` in `Gruntfile.js` and replace last sub-task `shell:deploy` with your own.
 
+## TODO
+
+- Fix afisha block on mobile layouts
+
 ## License
 MIT
