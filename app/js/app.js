@@ -22,4 +22,14 @@ var app = (function(document, $) {
 	'use strict';
 	app.init();
 
+    
+    $(document).ready(function (){
+       
+        $('#truemans-num').html((Math.random()*10+5).toFixed());
+        
+    });
+    
+    
 })();
+
+

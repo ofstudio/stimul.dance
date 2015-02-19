@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= app %>/',
-					src: ['**/*.jade', '!**/header.jade', '!**/footer.jade', '!**/mixins.jade', '!**/topmenu.jade', '!**/afisha.jade'],
+					src: ['**/*.jade', '!**/header.jade', '!**/footer.jade', '!**/mixins.jade', '!**/topmenu.jade', '!**/afisha.jade', '!**/truemans-reg.jade'],
 					ext: '.html',
 					dest: '<%= app %>/'
 				}]

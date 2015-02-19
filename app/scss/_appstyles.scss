@@ -198,3 +198,54 @@ $medium-logo-width: 160px;
 @media #{$medium-up} {
   @include top-menu($medium-logo-width, $medium-logo-width * .75);
 }
+
+
+// Truemans 2015
+
+.truemans2015 {
+  background: #143658 url("../images/tmn-form.jpg") center top no-repeat;
+  background-size: 100% auto;
+  margin: rem-calc(10px) 0 rem-calc(50px);
+  
+  h2 {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: rem-calc(32px);
+  }
+  
+  .form {
+    padding-top: 22%;
+    padding-bottom: 2%;
+    
+    label {
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+  
+  
+  
+  .signup-button {
+    @include button ($button-med, $alert-color, false);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: rem-calc(16px);
+    margin-top: rem-calc(10px);
+  }
+  
+  .has-tip {
+    border: none!important;
+    cursor: pointer;
+  }
+ 
+  #signupSwitchSuccess {
+//    display: none;
+  }
+}
+h3.modal-head {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #333;
+}
