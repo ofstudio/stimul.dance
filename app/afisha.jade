@@ -1,24 +1,25 @@
 include mixins
 
-    
+
 +page_container
-    br
-    br
-    a(name="afisha" data-magellan-destination="afisha")
-    h2 Афиша
+  br
+  br
+  a(name="afisha" data-magellan-destination="afisha")
+  h2 Афиша
 
-    +page_container_small
-        img(src="images/stimul-rock-720.jpg")
-        <br><br><br>
+  //+page_container_small
+  //    img(src="images/stimul-rock-720.jpg")
+  //    <br><br><br>
 
 
-    div.row.afisha
+  div.row.afisha
 
-        div(class="medium-6 columns")
-            +afisha_item(3, "апреля")
-                | Russian Open WCS  After Party! Самые яркие моменты на большом экране и самая лучшая музыка Руопена от DJ Katswing! Начало в 20:00.
+    div(class="medium-6 columns")
+      +afisha_item(10, "апреля")
+        | We will rock you! Самые вкусные и самые безбашенные хиты рок-музыки всех времен. Рок-н-ролльный угар и чад кутежа под музыку DJ&nbsp;Katswing! Начало в 20:00.
 
-        div(class="medium-6 columns")
-            +afisha_item(10, "апреля")
-                | We will rock you! Самые вкусные и самые безбашенные хиты рок-музыки всех времен. Рок-н-ролльный угар и чад кутежа под музыку DJ&nbsp;Katswing! Начало в 20:00.
-
+    div(class="medium-6 columns")
+      +afisha_item(17, "апреля")
+        | Пятница и фруктово-витаминный Стимул! Музыкальная программа от DJ Дона Педро и витаминный комплимент от наших прекрасных барышень :-) Начало в 20:00.
+  
+        
