@@ -1,24 +1,29 @@
 include mixins
 
 
-+page_container
++page_container_narrow
   br
   br
   a(name="afisha" data-magellan-destination="afisha")
   h2 Афиша
 
-  +page_container_small
-      img(src="images/sf2015-preparty720.jpg")
-      <br><br><br>
+  //+page_container_small
+  //    img(src="images/sf2015-preparty720.jpg")
+  //    <br><br><br>
   
 
-  div.row.afisha
 
-    div(class="medium-6 columns")
-      +afisha_item(15, "мая")
-        | Мы вернулись с каникул! Рулевой этой пятницы — DJ Señor Don Pedro! Welcome!
-      
-    div(class="medium-6 columns")
-      +afisha_item(22, "мая")
-        | Вечеринка препати <a href="http://wcs.life/viesiennieie-obostrieniie-2015/" target="_blank">Весеннего Обострения c Браули!</a> Начало в 20:00
-    
+  p.big Друзья! Пятничные вечеринки в Стимуле отправляются на летние каникулы до осени 2015! Но не покидают вас насовсем. В наших планах два больших и интересных танцевальных мероприятия в июле и в августе — подробности совсем скоро! 
+  img(src="images/summer2015.jpg")
+  p.big <br>Подпишитесь на наши группы в <a href="https://www.facebook.com/groups/1544709105740790/" target="_blank">Фейсбуке</a> или <a href="https://vk.com/stimul.dance" target="_blank">Вконтакте</a>, чтобы не пропустить самое интересное. До встречи!<br>
+
+
+  //div.row.afisha
+
+    //div(class="medium-6 columns")
+      //  +afisha_item(22, "мая")
+      //    | Вечеринка препати <a href="http://wcs.life/viesiennieie-obostrieniie-2015/" target="_blank">Весеннего Обострения c Браули!</a> Начало в 20:00
+      //
+      //div(class="medium-6 columns")
+      //  +afisha_item(29, "мая")
+      //    | Афтепати Весеннего обострения: с фотками, видео и воспоминаниями очевидцев :) Музыка пятничного вечера от DJ Ole-Ole и DJ Katswing. Начало в 20:00!

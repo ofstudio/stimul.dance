@@ -1,113 +1,126 @@
 include mixins
 doctype html
 html(class="no-js", lang="en")
-    include header
-    body
-        include topmenu
-        a(name="party" data-magellan-destination="party")
+  include header
+  body
+    include topmenu
+    a(name="party" data-magellan-destination="party")
 
 
 
-        +page_container_narrow
-                div.row.big-party
-                    div(class="medium-6 columns")
-                        img(src="images/stimul-flare.jpg")
-                    div(class="medium-6 columns")
-                        h2.hide Большая пятничная West Coast Swing вечеринка в Стимуле!
-                        img(src="images/big-party-circle.png"
-                        title="Большая пятничная West Coast Swing вечеринка в Стимуле!"
-                        alt="Большая пятничная West Coast Swing вечеринка в Стимуле!")
+    +page_container_narrow
+      div.row.big-party
+        div(class="medium-6 columns")
+          img(src="images/stimul-flare.jpg")
+        div(class="medium-6 columns")
+          h2.hide Большая пятничная West Coast Swing вечеринка в Стимуле!
+          img(src="images/big-party-circle.png"
+          title="Большая пятничная West Coast Swing вечеринка в Стимуле!"
+          alt="Большая пятничная West Coast Swing вечеринка в Стимуле!")
+
+    include afisha
+  +page_container_narrow
+    //p.big Каждую пятницу с 20:00 до 23:30 самая большая West Coast Swing вечеринка Москвы собирает всех танцоров на одном танцполе. Лучшая музыка, любимые партнерши и партнеры и отличное завершение рабочей недели!
+    //h2.text-center Все это — Stimul Big Party! 
+    h2.text-center Stimul Big Party! 
+    br
+    p.text-center <a href="https://www.facebook.com/groups/1544709105740790/" target="_blank"><img src="images/fb-sea48.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://vk.com/stimul.dance" target="_blank"><img src="images/vk-sea48.png"></a>
+
+  +page_container
+    video(class="fp-video show-for-large-only" loop="true" autoplay="" poster="images/video-poster.jpg")
+      source(src="images/stimul.site.mp4" type="video/mp4")
+      source(src="images/stimul.site.ogg" type="video/ogg")
+      source(src="images/stimul.site.webm" type="video/webm")
+    div(class="fp-video-ios hide-for-large-only")
+      video(loop="true" autoplay="" controls="" poster="images/video-poster.jpg")
+        source(src="images/stimul.site.mp4" type="video/mp4")
+        source(src="images/stimul.site.ogg" type="video/ogg")
+        source(src="images/stimul.site.webm" type="video/webm")
+
+
+
+
+
+  +page_container
+    a(name="stimul" data-magellan-destination="stimul")
+    h2 ДК Стимул
+
+    div.row
+      div(class="medium-6 columns")
+        ul
+          li Танцпол 222 м<sup>2</sup>
+          li Старинный особняк 19 века и уютные интерьеры 
+          li Профессиональное освещение и звук
+          li Внутри ТТК, бесплатная парковка.
+          li 10-15 минут от метро «Пролетарская» или «Волгоградский проспект»
+          li Музыка от лучших диджеев!
+          li Бесплатный вход и Birthday Jam для каждого именинника, а также помощь в проведении ваших праздников и Дней рождения!
+      div(class="medium-6 columns")
+        img(src="images/stimul-zal.jpg")
+
+    br
+
+    ul.slideshow(data-orbit data-options="animation_speed:500;timer_speed: 3000;timer: true;pause_on_hover: false; navigation_arrows: true; slide_number: false; bullets: false;")
+      li: img(src="images/slide1.jpg")
+      li: img(src="images/slide2.jpg")
+      li: img(src="images/slide3.jpg")
+      li: img(src="images/slide4.jpg")
+      li: img(src="images/slide5.jpg")
+      li: img(src="images/slide6.jpg")
+      li: img(src="images/slide7.jpg")
+      li: img(src="images/slide8.jpg")
+      li: img(src="images/slide9.jpg")
+
+
+
+
+
+
+
+    br
     
-        include afisha
+    a(name="address" data-magellan-destination="address")
+    h2 Адрес
+    div.row
+      div(class="medium-6 columns")
+        p.big Москва, Сибирский проезд, д.&nbsp;2, стр.&nbsp;5, Дом&nbsp;культуры&nbsp;«Стимул»
+        p <strong>От метро Волгоградский проспект</strong><br>Выход в сторону последнего вагона из центра, вперед до подземного перехода через Волгоградский проспект, через подземный переход, по ул. Талалихина до первого перекрестка со светофором, повернуть направо на Сибирский проезд и через пару минут вы на месте ;)  
+        p <strong>От метро Пролетарская/Крестьянская застава</strong><br>По наземному переходу перейти Волгоградский проспект, пересечь жилой массив в сторону улицы Талалихина до перекрестка с Сибирским проспектом и далее по Сибирскому проспекту.
+      div(class="medium-6 columns")
+        | <img src="//api-maps.yandex.ru/services/constructor/1.0/static/?sid=NbZpfCSi7Uv59K-GNG2-FAALXb0oV4p3&width=600&height=450" alt=""/>
 
-        +page_container_narrow
-            video(class="fp-video show-for-large-only" loop="true" autoplay="" poster="images/video-poster.jpg")
-                source(src="images/stimul.site.mp4" type="video/mp4")
-                source(src="images/stimul.site.ogg" type="video/ogg")
-                source(src="images/stimul.site.webm" type="video/webm")
-            div(class="fp-video-ios hide-for-large-only")
-                video(loop="true" autoplay="" controls="" poster="images/video-poster.jpg")
-                    source(src="images/stimul.site.mp4" type="video/mp4")
-                    source(src="images/stimul.site.ogg" type="video/ogg")
-                    source(src="images/stimul.site.webm" type="video/webm")
-
-
-        +page_container_narrow
-            p.big Каждую пятницу с 20:00 до 23:30 самая большая West Coast Swing вечеринка Москвы собирает всех танцоров на одном танцполе. Лучшая музыка, любимые партнерши и партнеры и отличное завершение рабочей недели!
-            h2.text-center Все это — Stimul Big Party! 
-            br
-            p.text-center <a href="https://www.facebook.com/groups/1544709105740790/" target="_blank"><img src="images/fb-sea48.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://vk.com/stimul.dance" target="_blank"><img src="images/vk-sea48.png"></a>
-
-               
-        +page_container     
-            ul.slideshow(data-orbit data-options="animation_speed:500;timer_speed: 3000;timer: true;pause_on_hover: false; navigation_arrows: true; slide_number: false; bullets: false;")
-                li: img(src="images/slide1.jpg")
-                li: img(src="images/slide2.jpg")
-                li: img(src="images/slide3.jpg")
-         
-        
-        
-        +page_container
-            a(name="stimul" data-magellan-destination="stimul")
-            h2 ДК Стимул
-            
-            div.row
-                div(class="medium-6 columns")
-                    ul
-                        li Танцпол 222 м<sup>2</sup>
-                        li Старинный особняк 19 века и уютные интерьеры 
-                        li Профессиональное освещение и звук
-                        li Внутри ТТК, бесплатная парковка.
-                        li 10-15 минут от метро «Пролетарская» или «Волгоградский проспект»
-                        li Музыка от лучших диджеев!
-                        li Бесплатный вход и Birthday Jam для каждого именинника, а также помощь в проведении ваших праздников и Дней рождения!
-                div(class="medium-6 columns")
-                    img(src="images/stimul-zal.jpg")
-
-            br
-            br
-            a(name="address" data-magellan-destination="address")
-            h2 Адрес
-            div.row 
-                div(class="medium-6 columns")
-                    p.big Москва, Сибирский проезд, д.&nbsp;2, стр.&nbsp;5, Дом&nbsp;культуры&nbsp;«Стимул»
-                    p <strong>От метро Волгоградский проспект</strong><br>Выход в сторону последнего вагона из центра, вперед до подземного перехода через Волгоградский проспект, через подземный переход, по ул. Талалихина до первого перекрестка со светофором, повернуть направо на Сибирский проезд и через пару минут вы на месте ;)  
-                    p <strong>От метро Пролетарская/Крестьянская застава</strong><br>По наземному переходу перейти Волгоградский проспект, пересечь жилой массив в сторону улицы Талалихина до перекрестка с Сибирским проспектом и далее по Сибирскому проспекту.
-                div(class="medium-6 columns")
-                    | <img src="//api-maps.yandex.ru/services/constructor/1.0/static/?sid=NbZpfCSi7Uv59K-GNG2-FAALXb0oV4p3&width=600&height=450" alt=""/>
-            
-            br
-            br
-            a(name="about" data-magellan-destination="about")
-            h2 О нас
-            p  Stimul Big Party — это совместный проект <a href="http://improteam.com/" target="_blank">Impro Dance Team</a> и <a href="http://westiedisco.org" target="_blank">Westie Диско</a>. Мы объединили наши усилия чтобы сделать эту вечеринку по-настоящему большой, интересной и любимой вами!
-            p.text-center
-                a(href="http://improteam.com/" target="_blank"): img(src="images/impro.png")
-                a(href="http://westiedisco.org/" target="_blank"): img(src="images/westie.png")
+    br
+    br
+    a(name="about" data-magellan-destination="about")
+    h2 О нас
+    p  Stimul Big Party — это совместный проект <a href="http://improteam.com/" target="_blank">Impro Dance Team</a> и <a href="http://westiedisco.org" target="_blank">Westie Диско</a>. Мы объединили наши усилия чтобы сделать эту вечеринку по-настоящему большой, интересной и любимой вами!
+    p.text-center
+      a(href="http://improteam.com/" target="_blank"): img(src="images/impro.png")
+      a(href="http://westiedisco.org/" target="_blank"): img(src="images/westie.png")
 
 
-            a(name="wcs" data-magellan-destination="wcs")
-            h2 О West Coast Swing
-            div.row
-                div(class="medium-6 columns")
-                    p West Coast Swing (Вест Кост Свинг) — современный парный танец с берегов солнечной Калифорнии. Это свобода импровизации и красивый диалог мужчины и женщины. 
-                    p Танец West Coast Swing — это много отличной музыки: от классики R&B до ультрасовременных хитов. West Coast Swing — это зажигательные вечеринки, сотни новых знакомств и тысячи танцоров в России, Европе, США и других уголках мира!
-                    p Не важно, танцевали ли вы раньше или нет, есть ли у вас партнер или партнерша — приглашаем вас убедиться, что социальные танцы это здорово, особенно, когда это вест кост свинг!
-                div(class="medium-6 columns")
-                    div(class="flex-video widescreen")
-                        iframe(width="853" height="480" src="//www.youtube.com/embed/M4o-KrFpVd0?rel=0" frameborder="0" allowfullscreen)
-                        
-            br
-            br
-            h4.text-center Научиться танцевать WCS в Москве можно  здесь
-            p.text-center
-                    //a(href="http://espresso.dance" target="_blank"): img(src="images/school-es.png")
-                    a(href="http://www.ivara.ru" target="_blank"): img(src="images/school-iv.png")
-                    a(href="https://vk.com/wcs_from_a_to_z" target="_blank"): img(src="images/school-lb.png")
-            br
-            br
-            p.text-center
-                small © Stimul Big Party 2014–2015
-        | <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26628534 = new Ya.Metrika({id:26628534, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26628534" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
-        include footer
+    a(name="wcs" data-magellan-destination="wcs")
+    h2 О West Coast Swing
+    div.row
+      div(class="medium-6 columns")
+        p West Coast Swing (Вест Кост Свинг) — современный парный танец с берегов солнечной Калифорнии. Это свобода импровизации и красивый диалог мужчины и женщины. 
+        p Танец West Coast Swing — это много отличной музыки: от классики R&B до ультрасовременных хитов. West Coast Swing — это зажигательные вечеринки, сотни новых знакомств и тысячи танцоров в России, Европе, США и других уголках мира!
+        p Не важно, танцевали ли вы раньше или нет, есть ли у вас партнер или партнерша — приглашаем вас убедиться, что социальные танцы это здорово, особенно, когда это вест кост свинг!
+      div(class="medium-6 columns")
+        div(class="flex-video widescreen")
+          iframe(width="853" height="480" src="//www.youtube.com/embed/M4o-KrFpVd0?rel=0" frameborder="0" allowfullscreen)
+
+    br
+    br
+    h4.text-center Научиться танцевать WCS в Москве можно  здесь
+    p.text-center
+      //a(href="http://espresso.dance" target="_blank"): img(src="images/school-es.png")
+      a(href="http://www.ivara.ru" target="_blank"): img(src="images/school-iv.png")
+      a(href="https://vk.com/wcs_from_a_to_z" target="_blank"): img(src="images/school-lb.png")
+    br
+    br
+    p.text-center
+      small © Stimul Big Party 2014–2015
+  | <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter26628534 = new Ya.Metrika({id:26628534, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/26628534" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+  include footer
 
