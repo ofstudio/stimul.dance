@@ -48,6 +48,7 @@ Find task `publish` in `Gruntfile.js` and replace last sub-task `shell:deploy` w
 ## TODO
 
 - Fix afisha block on mobile layouts
+- Fix video issue Win / Chrome
 
 ## License
 MIT
