@@ -24,9 +24,6 @@ var app = (function(document, $) {
 
     
     $(document).ready(function (){
-       
-        //$('#truemans-num').html((Math.random()*10+14).toFixed());
-        
     });
     
     
